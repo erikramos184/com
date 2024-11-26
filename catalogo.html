@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Automóviles</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e2a37;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-height: 80px;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4a261;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Section Title and Description */
+        .section-description {
+            font-size: 1.1em;
+            color: #555;
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        .section-description strong {
+            color: #1e2a37;
+        }
+
+        .car-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .car {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .car:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .car img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .car img:hover {
+            transform: scale(1.05);
+        }
+
+        .car h3 {
+            margin-top: 10px;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .car p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background-color: #1e2a37;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .car-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .car-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="legendary_motors.JPG" alt="Logo">
+            <span>Legendary Motors</span>
+        </div>
+        <h1>Catálogo de Automóviles</h1>
+        <nav>
+            <ul>
+                <li><a href="#autos-nuevos">Autos Nuevos</a></li>
+                <li><a href="#autos-clasicos">Autos Clásicos</a></li>
+                <li><a href="#autos-electricos">Autos Eléctricos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section for New Cars -->
+        <section id="autos-nuevos">
+            <h2>Autos Nuevos</h2>
+            <div class="section-description">
+                <p><strong>Los autos deportivos de lujo</strong> son sinónimo de velocidad, diseño vanguardista y tecnología avanzada. En esta sección, presentamos algunos de los modelos más impresionantes que puedes encontrar en el mercado hoy en día, ideales para los amantes de la alta performance y el diseño exclusivo.</p>
+            </div>
+            <div class="car-container">
+                <div class="car">
+                    <img src="FerrariSF90.JPG" alt="Ferrari SF90">
+                    <h3>Ferrari SF90</h3>
+                    <p>Motor V8, 1000 hp, 0-100 km/h en 2.5 segundos.</p>
+                </div>
+                <div class="car">
+                    <img src="lamborghini-aventador-sv-4k-ae.JPG" alt="Lamborghini Aventador">
+                    <h3>Lamborghini Aventador</h3>
+                    <p>Motor V12, 730 hp, 0-100 km/h en 2.9 segundos.</p>
+                </div>
+                <div class="car">
+                    <img src="2018-porsche-911-turbo-s-1545239421.JPG" alt="Porsche 911 Turbo">
+                    <h3>Porsche 911 Turbo</h3>
+                    <p>Motor 3.8L, 640 hp, 0-100 km/h en 3.0 segundos.</p>
+                </div>
+                <div class="car">
+                    <img src="MCLAREN.JPG" alt="McLaren 720S">
+                    <h3>McLaren 720S</h3>
+                    <p>Motor V8, 710 hp, 0-100 km/h en 2.7 segundos.</p>
+                </div>
+                <div class="car">
+                    <img src="corvette.jpg" alt="Chevrolet Corvette">
+                    <h3>Chevrolet Corvette</h3>
+                    <p>Motor V8, 495 hp, 0-100 km/h en 3.0 segundos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for Classic Cars -->
+        <section id="autos-clasicos">
+            <h2>Autos Clásicos</h2>
+            <div class="section-description">
+                <p><strong>Los autos clásicos</strong> son verdaderas piezas de colección que combinan historia, arte y pasión. Cada uno de estos vehículos cuenta con un legado único que los hace destacar en el mundo de los automóviles. Desde los modelos americanos hasta los europeos, estos autos nunca dejan de cautivar a los entusiastas del motor.</p>
+            </div>
+            <div class="car-container">
+                <div class="car">
+                    <img src="001-1965-Ford-Mustang-Fastback.JPG" alt="Ford Mustang 1965">
+                    <h3>Ford Mustang 1965</h3>
+                    <p>Motor V8, 271 hp, diseño clásico americano.</p>
+                </div>
+                <div class="car">
+                    <img src="camaro-1969.JPG" alt="Chevrolet Camaro 1969">
+                    <h3>Chevrolet Camaro 1969</h3>
+                    <p>Motor V8, 396 hp, diseño muscle car.</p>
+                </div>
+                <div class="car">
+                    <img src="JAGUAR1961.JPG" alt="Jaguar E-Type 1961">
+                    <h3>Jaguar E-Type 1961</h3>
+                    <p>Motor 6 cilindros, 265 hp, clásico deportivo británico.</p>
+                </div>
+                <div class="car">
+                    <img src="1952-Mercedes-Benz-300SL-W194-00002-front-three-quarter-in-motion.JPG" alt="Mercedes-Benz 300SL 1952">
+                    <h3>Mercedes-Benz 300SL 1952</h3>
+                    <p>Motor 6 cilindros, 215 hp, alas de gaviota.</p>
+                </div>
+                <div class="car">
+                    <img src="PORSCHE9111973.JPG" alt="Porsche 911 1973">
+                    <h3>Porsche 911 1973</h3>
+                    <p>Motor 6 cilindros, 190 hp, clásico alemán.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for Electric Cars -->
+        <section id="autos-electricos">
+            <h2>Autos Eléctricos</h2>
+            <div class="section-description">
+                <p><strong>Los autos eléctricos</strong> están revolucionando la industria automotriz con sus innovaciones tecnológicas y cero emisiones. Estos vehículos no solo ofrecen un rendimiento impresionante, sino que también son una alternativa ecológica que está tomando fuerza rápidamente en el mercado global.</p>
+            </div>
+            <div class="car-container">
+                <div class="car">
+                    <img src="TESLA-MOTORS-Model-S-4693_92.JPG" alt="Tesla Model S">
+                    <h3>Tesla Model S</h3>
+                    <p>Autonomía de hasta 600 km, aceleración de 0-100 km/h en 2.3 segundos.</p>
+                </div>
+                <div class="car">
+                    <img src="426214073_the_new_nissan_leaf_the_world_s_best_selling_zero_emissions_electric.JPG" alt="Lucid Air">
+                    <h3>Lucid Air</h3>
+                    <p>Autonomía de 832 km, 1,111 hp.</p>
+                </div>
+                <div class="car">
+                    <img src="AUDIGOOFY.JPG" alt="Rivian R1T">
+                    <h3>Rivian R1T</h3>
+                    <p>Camioneta eléctrica, autonomía de 400 km, 800 hp.</p>
+                </div>
+                <div class="car">
+                    <img src="MUSTANGG.JPG" alt="BMW i4">
+                    <h3>BMW i4</h3>
+                    <p>Autonomía de 590 km, 530 hp.</p>
+                </div>
+                <div class="car">
+                    <img src="2020-porsche-taycan_100714962_h.JPG"alt="Ford Mustang Mach-E">
+                    <h3>Ford Mustang Mach-E</h3>
+                    <p>Autonomía de 370 km, 459 hp.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Automóviles. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

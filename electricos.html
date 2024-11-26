@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Autos Eléctricos</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e2a37;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-height: 80px;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 2em;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .car-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .car {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .car:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .car img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .car h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .car p {
+            color: #555;
+            font-size: 1em;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: #1e2a37;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #1e2a37;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .car-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .car-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center><div class="logo">
+            <img src="legendary_motors.JPG" alt="Logo">
+            <span>Legendary Motors</span>
+        </div></center>
+        <h1>Catálogo de Autos Eléctricos</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="section-description">
+    <center><p><strong>Los autos eléctricos</strong> representan el futuro del transporte, combinando sostenibilidad con tecnología avanzada. Estos vehículos no solo ofrecen una conducción silenciosa y eficiente, sino que también cuentan con un rendimiento impresionante gracias a sus motores eléctricos. Además, los autos eléctricos son cada vez más populares por su bajo impacto ambiental y sus innovadores sistemas de carga rápida, lo que los convierte en una opción atractiva para aquellos que buscan reducir su huella de carbono sin sacrificar potencia ni estilo.</p></center>
+</div>
+            <div class="car-container">
+                <div class="car">
+                    <img src="TESLA-MOTORS-Model-S-4693_92.JPG" alt="Tesla Model S">
+                    <h3>Tesla Model S</h3>
+                    <p>Autonomía de hasta 650 km, 0-100 km/h en 2.3 segundos.</p>
+                    <a href="ventas.html" class="buy-button">Comprar</a>
+                </div>
+                <div class="car">
+                    <img src="426214073_the_new_nissan_leaf_the_world_s_best_selling_zero_emissions_electric.JPG" alt="Nissan Leaf">
+                    <h3>Nissan Leaf</h3>
+                    <p>Autonomía de hasta 385 km, 147 hp, ideal para ciudad.</p>
+                    <a href="ventas.html" class="buy-button">Comprar</a>
+                </div>
+                <div class="car">
+                    <img src="AUDIGOOFY.JPG" alt="Audi e-tron">
+                    <h3>Audi e-tron</h3>
+                    <p>Autonomía de hasta 400 km, 355 hp, SUV eléctrico de lujo.</p>
+                    <a href="ventas.html" class="buy-button">Comprar</a>
+                </div>
+                <div class="car">
+                    <img src="MUSTANGG.JPG" alt="Ford Mustang Mach-E">
+                    <h3>Ford Mustang Mach-E</h3>
+                    <p>Autonomía de hasta 490 km, 459 hp, SUV eléctrico deportivo.</p>
+                    <a href="ventas.html" class="buy-button">Comprar</a>
+                </div>
+                <div class="car">
+                    <img src="2020-porsche-taycan_100714962_h.JPG" alt="Porsche Taycan">
+                    <h3>Porsche Taycan</h3>
+                    <p>Autonomía de hasta 450 km, 616 hp, tecnología y diseño premium.</p>
+                    <a href="ventas.html" class="buy-button">Comprar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Autos Eléctricos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
