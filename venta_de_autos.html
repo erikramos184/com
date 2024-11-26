@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary Motors</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .logo img {
+            vertical-align: middle;
+            max-height: 70px;
+            margin-right: 10px;
+        }
+
+        .slogan {
+            font-style: italic;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Image Styling */
+        img {
+            width: 500%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #1abc9c;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #16a085;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #34495e;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #1abc9c;
+        }
+
+        /* Section Styling */
+        .section-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            max-height: 250px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="legendary_motors.JPG" alt="Logo">
+        Legendary Motors
+    </div>
+    <div class="slogan">¡Conduce tus sueños!</div>
+    <nav class="navbar">
+        <a href="clasico.HTML">Autos Clásicos</a>
+        <a href="deportivos.html">Autos Deportivos</a>
+        <a href="electricos.html">Autos Eléctricos</a>
+        <a href="catalogo.html">Catálogo Completo</a>
+        <a href="ventas.html">Venta de Autos</a>
+        <a href="cotiza.html">cotiza tu automovil</a>
+    </nav>
+</header>
+
+<div class="content">
+    <section id="autos-clasicos">
+        <h2>Autos Clásicos</h2>
+        <p>Los autos clásicos son piezas icónicas que combinan diseño atemporal y valor histórico, apreciados por su estilo único y rareza. Representan el legado automotriz y la nostalgia de épocas pasadas.</p>
+        <div class="section-container">
+            <div class="card">
+                <img src="ferrari_clasico.JPG" alt="Ferrari Clásico">
+                <h3>Ferrari 250 GTO</h3>
+                <p>Un icono de la historia automotriz, conocido por su exclusividad y belleza inigualable.</p>
+            </div>
+            <div class="card">
+                <img src="lamborghini_clasico.JPG" alt="Lamborghini Clásico">
+                <h3>Lamborghini Miura</h3>
+                <p>Un deportivo de los años 60 que cambió el concepto de diseño y rendimiento en autos deportivos.</p>
+            </div>
+            <div class="card">
+                <img src="porsche_clasico.JPG" alt="Porsche 911 Clásico">
+                <h3>Porsche 911 (1964)</h3>
+                <p>Un símbolo de la ingeniería alemana, con un diseño que ha perdurado durante décadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="autos-nuevos">
+        <h2>Autos Nuevos</h2>
+        <p>Los autos nuevos ofrecen tecnología avanzada, mayor seguridad y eficiencia, además de opciones sostenibles como híbridos y eléctricos. Son ideales para quienes buscan comodidad, personalización y cumplir con normativas ambientales actuales.</p>
+        <div class="section-container">
+            <div class="card">
+                <img src="lamborghini_nuevo.JPG" alt="Lamborghini Nuevo">
+                <h3>Lamborghini Huracán</h3>
+                <p>Un superdeportivo con motor V10 que combina potencia con tecnología avanzada.</p>
+            </div>
+            <div class="card">
+                <img src="audi_nuevo.JPG" alt="Audi R8">
+                <h3>Audi R8</h3>
+                <p>El auto de lujo definitivo, con un motor V10 que ofrece una experiencia de conducción inigualable.</p>
+            </div>
+            <div class="card">
+                <img src="tesla_nuevo.JPG" alt="Tesla Model S">
+                <h3>Tesla Model S</h3>
+                <p>El futuro de la movilidad eléctrica, con una autonomía impresionante y tecnología de vanguardia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ventas">
+        <h2>Ventas</h2>
+        <p>La venta de carros es mucho más que una simple transacción; es una oportunidad para ofrecer confianza, calidad y un estilo de vida adaptado a cada necesidad. Ofrecemos autos nuevos, clásicos y eléctricos, con opciones de financiamiento flexibles.</p>
+        <button>Solicita más Información</button>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Legendary Motors. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
